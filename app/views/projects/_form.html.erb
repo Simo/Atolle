@@ -1,0 +1,20 @@
+<%= form_for @project do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :titolo %><br />
+    <%= f.text_field :titolo %>
+  </p>
+  <p>
+    <%= f.label :data_lavori %><br />
+    <%= f.date_select :data_lavori %>
+  </p>
+  <p>
+    <%= f.label :localita %><br />
+    <%= f.text_field :localita %>
+  </p>
+  <p>
+    <%= f.label :descrizione %><br />
+    <%= f.text_field :descrizione %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

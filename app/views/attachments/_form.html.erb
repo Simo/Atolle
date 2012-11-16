@@ -1,0 +1,16 @@
+<%= form_for @attachment do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :project_id %><br />
+    <%= f.number_field :project_id %>
+  </p>
+  <p>
+    <%= f.label :indirizzo %><br />
+    <%= f.text_field :indirizzo %>
+  </p>
+  <p>
+    <%= f.label :file %><br />
+    <%= f.text_field :file %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

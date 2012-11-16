@@ -1,0 +1,13 @@
+one:
+  titolo: MyString
+  indirizzo: MyString
+  alt_text: MyString
+  caption_text: MyString
+  link: MyString
+
+two:
+  titolo: MyString
+  indirizzo: MyString
+  alt_text: MyString
+  caption_text: MyString
+  link: MyString

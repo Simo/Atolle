@@ -1,0 +1,45 @@
+// Place all the styles related to the contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#contacts {
+  padding: 0 auto;
+  height:400px;
+  background-image: url("/assets/contact-page-template.png");
+  background-repeat: no-repeat;
+}
+
+#contact-form {
+  margin-top: 65px;
+}
+
+#contact-form input[type="text"]{
+  width: 198px;
+}
+
+#contact-form textarea{
+  width: 198px;
+}
+
+.offset250 {
+  margin-left: 250px;
+}
+
+.offset732 {
+    margin-left: 752px;
+    margin-top: -60px;
+}
+
+.offset732 img {
+    margin-bottom:5px;
+}
+
+.offset732 img a{
+  color: #ffffff;
+}
+
+#contact-form label {
+  font-size: 10px;
+  line-height: 15px;
+  margin-bottom: -10px;
+}

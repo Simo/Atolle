@@ -1,0 +1,82 @@
+<!-- ================ INCLUDE FOLLOWING FILES IN YOUR <HEAD> ==================== -->
+<link   rel="stylesheet" type="text/css" href="css/resets.css" />
+<link   rel="stylesheet" type="text/css" href="css/jbslider.css" />
+<link   rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" />
+<link   rel="stylesheet" type="text/css" href="custom_css.css" />
+
+<script type="text/javascript" src="js/jquery-1.7.min.js"> </script>
+<script type="text/javascript" src="js/jquery-ui-1.8.12.min.js"> </script>
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"> </script>
+<script type="text/javascript" src="js/jbslider.min.js"> </script>
+<!-- ================ /INCLUDE FOLLOWING FILES IN YOUR <HEAD> ==================== -->
+
+
+<!-- ======================= INIT SLIDER ======================== -->
+<script type="text/javascript">
+    
+    (function($) {
+        $(document).ready(function(){
+            
+            $('.slider_instance1').jbslider({
+                /* ADJUST PARAMETERS */
+
+                width             : "940",
+                height            : "380",
+
+                autoSlide         : "0",           /* 0 = OFF */
+                transEffect       : "easeInOutExpo",  /* Refer to jQuery easing */
+                slideSpeed        : "750",        
+                descOpacity       : "0.9"
+
+                /* /PARAMETERS */
+            });
+            
+        });
+    })(jQuery)
+    
+</script>
+<!-- ====================== /INIT SLIDER ======================== -->
+
+
+<!-- ======================== J.B.SLIDER HTML ============================== -->
+<div class="slider_instance1">
+    <div class="JBSlider">
+        <div class="view"> 
+            <div class="wrapper">
+				<% @projects.each do |project| %>
+                <!-- ====================== IMAGES LOOP ===================== -->
+                <div class="item">
+                    <img src="assets<%= asset_path(project.path)%>"/>
+                    <div class="descBlock"> </div>
+                    <div class="description">
+                        <h4><%= project.titolo%></h4>
+                        <p> <!-- Description -->
+                            <%= project.descrizione %>
+                        </p>
+                        <!-- Read more click link -->
+                        <%= link_to "Vedi progetto", project_path(project), :class => "itemLink" %>
+                    </div>
+                </div>
+				<% end %>
+                <!-- ====================== /IMAGES LOOP ===================== -->
+
+            </div>
+        </div>
+
+        <div class="controller"> 
+            <div class="wrapper">
+                <div class="container">
+					<% @projects.each do |project| %>
+                    <!-- ====================== THUMBNAILS LOOP ===================== -->
+                    <div class="item">
+                        <img src = "assets<%= asset_path(project.path)%>" width="243" height="110"/>
+                    </div>
+                    <!-- ====================== /THUMBNAILS LOOP ===================== -->
+					<% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ======================== /J.B.SLIDER HTML ============================== -->
+<p><%= link_to "New Project", new_project_path %></p>

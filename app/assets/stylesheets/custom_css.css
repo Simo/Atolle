@@ -1,0 +1,71 @@
+/* Background Color */
+.JBSlider,
+.JBSlider .view,
+.JBSlider .controller_jsb {
+    background-color: #EEE;
+}
+
+/* Scroll track */
+.JBSlider .controller_jsb .jspTrack {
+    background-color: #FFF;
+}
+
+/* Scroll button color */
+.JBSlider .controller_jsb .jspTrack .jspDrag {
+    background-color: #f26221;
+}
+
+/* Scroll button color hover */
+.JBSlider .controller_jsb .jspTrack .jspDrag:hover {
+    background-color: #f26221;
+}
+
+/* Thumbs slide border color */
+.JBSlider .controller_jsb .wrapper_jsb .item {   
+    background-color: #FFF;
+}
+
+/* Thumbs slide border color on hover */
+.JBSlider .controller_jsb .wrapper_jsb .item:hover {
+    background-color: #df3737;
+}
+
+/* Thumbs image border color */
+.JBSlider .controller_jsb .wrapper_jsb .item img {
+    border:1px solid #d3d3d3;
+}
+
+/* Slide border color */
+.JBSlider .view .wrapper_jsb .item img {
+     border:1px solid #d3d3d3;
+}
+
+/* Images border color */
+.JBSlider .view .wrapper_jsb {
+    border:5px solid #FFF;
+}
+
+/* Description box text */
+.JBSlider .view .wrapper_jsb .item .description p,
+.JBSlider .view .wrapper_jsb .item .description h4{
+    color: #333;
+}
+
+/* Description box background color */
+.JBSlider .view .wrapper_jsb .item .descBlock {
+    background-color: #d4d4d4;
+}
+
+/* Button text & background colors */
+.JBSlider .view .wrapper_jsb .description .itemLink {
+    color: #fff;
+    background-color: #f26221;
+	text-shadow: 1px 1px 0px #982020;
+}
+
+/* Button text & background hover colors  */
+.JBSlider .view .wrapper_jsb .description .itemLink:hover {
+    color: #FFF;
+    background-color: #000;
+    text-shadow: 1px 1px 0px #000000;
+}

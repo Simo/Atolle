@@ -1,0 +1,22 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#news-header {
+  font-family: 'Montserrat Alternates', sans-serif;
+  float:right;
+  width:250px;
+}
+
+.news-container {
+  float:right;
+  width:250px;
+  border: 1px dotted #eee;
+  padding: 0 3px;
+}
+
+.news-single {
+  float:right;
+  width:250px;
+  border-bottom: 1px dashed #fff2f2;
+}

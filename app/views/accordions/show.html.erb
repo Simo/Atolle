@@ -1,0 +1,28 @@
+<% title "Accordion" %>
+
+<p>
+  <strong>Titolo:</strong>
+  <%= @accordion.titolo %>
+</p>
+<p>
+  <strong>Indirizzo:</strong>
+  <%= @accordion.indirizzo %>
+</p>
+<p>
+  <strong>Alt Text:</strong>
+  <%= @accordion.alt_text %>
+</p>
+<p>
+  <strong>Caption Text:</strong>
+  <%= @accordion.caption_text %>
+</p>
+<p>
+  <strong>Link:</strong>
+  <%= @accordion.link %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_accordion_path(@accordion) %> |
+  <%= link_to "Destroy", @accordion, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", accordions_path %>
+</p>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+savoir:
+  voce: Savoir
+  priority: 1
+  language: fra
+  link: home
+
+projects:
+  voce: Projects
+  priority: 2
+  language: fra
+  link: projects

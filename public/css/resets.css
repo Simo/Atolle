@@ -1,0 +1,41 @@
+.JBSlider *, .JBSlider html, .JBSlider body, .JBSlider div, .JBSlider span, .JBSlider applet, .JBSlider object, .JBSlider iframe,
+.JBSlider h1, .JBSlider h2, .JBSlider h3, .JBSlider h4, .JBSlider h5, .JBSlider h6, .JBSlider p, .JBSlider blockquote, .JBSlider pre,
+.JBSlider a, .JBSlider abbr, .JBSlider acronym, .JBSlider address, .JBSlider big, .JBSlider cite, .JBSlider code,
+.JBSlider del, .JBSlider dfn, .JBSlider em, .JBSlider img, .JBSlider ins, .JBSlider kbd, .JBSlider q, .JBSlider s, .JBSlider samp,
+.JBSlider small, .JBSlider strike, .JBSlider strong, .JBSlider sub, .JBSlider sup, .JBSlider tt, .JBSlider var,
+.JBSlider b, .JBSlider u, .JBSlider i, .JBSlider center,
+.JBSlider dl, .JBSlider dt, .JBSlider dd, .JBSlider ol, .JBSlider ul, .JBSlider li,
+.JBSlider fieldset, .JBSlider form, .JBSlider label, .JBSlider legend,
+.JBSlider table, .JBSlider caption, .JBSlider tbody, .JBSlider tfoot, .JBSlider thead, .JBSlider tr, .JBSlider th, .JBSlider td,
+.JBSlider article, .JBSlider aside, .JBSlider canvas, .JBSlider details, .JBSlider embed, 
+.JBSlider figure, .JBSlider figcaption, .JBSlider footer, .JBSlider header, .JBSlider hgroup, 
+.JBSlider menu, .JBSlider nav, .JBSlider output, .JBSlider ruby, .JBSlider section, .JBSlider summary,
+.JBSlider time, .JBSlider mark, .JBSlider audio, .JBSlider video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.JBSlider article, .JBSlider aside, .JBSlider details, .JBSlider figcaption, .JBSlider figure, 
+.JBSlider footer, .JBSlider header, .JBSlider hgroup, .JBSlider menu, .JBSlider nav, .JBSlider section {
+    display: block;
+}
+
+.JBSlider ol, .JBSlider ul {
+	list-style: none;
+}
+.JBSlider blockquote, .JBSlider q {
+	quotes: none;
+}
+.JBSlider blockquote:before, .JBSlider blockquote:after,
+.JBSlider q:before, .JBSlider q:after {
+	content: '';
+	content: none;
+}
+.JBSlider table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

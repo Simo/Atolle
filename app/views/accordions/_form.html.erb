@@ -1,0 +1,24 @@
+<%= form_for @accordion do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :titolo %><br />
+    <%= f.text_field :titolo %>
+  </p>
+  <p>
+    <%= f.label :indirizzo %><br />
+    <%= f.text_field :indirizzo %>
+  </p>
+  <p>
+    <%= f.label :alt_text %><br />
+    <%= f.text_field :alt_text %>
+  </p>
+  <p>
+    <%= f.label :caption_text %><br />
+    <%= f.text_field :caption_text %>
+  </p>
+  <p>
+    <%= f.label :link %><br />
+    <%= f.text_field :link %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

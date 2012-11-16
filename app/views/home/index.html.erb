@@ -1,0 +1,57 @@
+<script language="javascript">$(document).ready(function(){
+	$('#one').liteAccordion({
+                    onTriggerSlide : function() {
+                        this.find('figcaption').fadeOut();
+                    },
+                    onSlideAnimComplete : function() {
+                        this.find('figcaption').fadeIn();
+                    },
+                    containerWidth : 640,
+                    containerHeight: 320,
+                    autoPlay : false,
+                    pauseOnHover : true,
+                    theme : 'light',
+                    rounded : false,
+                    enumerateSlides : false
+            }).find('figcaption:first').show();
+});</script>
+<div class="row">	
+ <div class="span8">
+  <div id="one">
+     <ol>
+      <% @accordion.each do |acc| %>
+      <li>
+            <h2><span><%= acc.titolo %></span></h2>
+            <div>
+                <figure>
+                    <img src="<%= acc.indirizzo %>" alt="<%= acc.alt_text %>" />
+                    <figcaption><%= acc.caption_text %></figcaption>
+                </figure>
+            </div>
+        </li>
+        <% end %>
+    </ol>
+    <noscript>
+        <p>Please enable JavaScript to get the full experience.</p>
+    </noscript>
+  </div>
+</div>
+<div class="span4" style="text-align:right;">
+	<div id="news" style=" height: 198px;" >
+		<div id="news-header" class="row">
+		  <h3>News</h3>
+		</div>
+		<div class="row">
+			<div class="news-container">
+				<% @news.each do |nws| %>
+					<div class="news-single">
+						<h4><%= nws.titolo %></h4>
+						<p><%= nws.breve%></p>
+					</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+<iframe width="250" height="150" src="http://www.youtube.com/embed/3F1_04GLrPs" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>

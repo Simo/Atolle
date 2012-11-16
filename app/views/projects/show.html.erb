@@ -1,0 +1,22 @@
+<div class="row">
+	<div class="span8">
+		<div id="gallery-1" class="royalSlider rsDefault fwImage col span_4">
+				<% @attachments.each do |attachment| %>
+			  		<a class="rsImg" data-rsBigImg="<%= asset_path(attachment.path) %>" href="/assets<%= asset_path(attachment.path) %>">Leonardo da Vinci - Mona Lisa<img width="96" height="72" class="rsTmb" src="/assets<%= asset_path(attachment.path) %>" /></a>
+			  	<% end %>
+		</div>
+	</div>
+	<div class="span4">
+		<h3><%= @project.titolo %></h3>
+		<div class="descr_project">
+			<%= @project.descrizione%>
+		</div>
+		<div class="admin_menu">
+			<p>
+			  <%= link_to "Edit", edit_project_path(@project) %> |
+			  <%= link_to "Destroy", @project, :confirm => 'Are you sure?', :method => :delete %> |
+			  <%= link_to "View All", projects_path %>
+			</p>
+		</div>
+	</div>
+</div> <!-- chiude row -->

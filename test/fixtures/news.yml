@@ -1,0 +1,22 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  titolo: News1
+  corpo: MyString
+  breve: MyString
+  pubblicazione: 2012-10-16
+  autore: MyString
+
+two:
+  titolo: News2
+  corpo: MyString
+  breve: MyString
+  pubblicazione: 2012-10-18
+  autore: MyString
+
+three:
+  titolo: News3
+  corpo: MyString
+  breve: MyString
+  pubblicazione: 2012-10-30
+  autore: MyString

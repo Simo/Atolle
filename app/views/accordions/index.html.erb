@@ -1,0 +1,25 @@
+<% title "Accordions" %>
+
+<table>
+  <tr>
+    <th>Titolo</th>
+    <th>Indirizzo</th>
+    <th>Alt Text</th>
+    <th>Caption Text</th>
+    <th>Link</th>
+  </tr>
+  <% for accordion in @accordions %>
+    <tr>
+      <td><%= accordion.titolo %></td>
+      <td><%= accordion.indirizzo %></td>
+      <td><%= accordion.alt_text %></td>
+      <td><%= accordion.caption_text %></td>
+      <td><%= accordion.link %></td>
+      <td><%= link_to "Show", accordion %></td>
+      <td><%= link_to "Edit", edit_accordion_path(accordion) %></td>
+      <td><%= link_to "Destroy", accordion, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Accordion", new_accordion_path %></p>

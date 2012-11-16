@@ -1,0 +1,17 @@
+one:
+  id: 1
+  titolo: MyString
+  data_lavori: 2012-10-19
+  localita: MyString
+  descrizione: MyString
+  copertina: copertina_1
+  folder: new_string
+
+two:
+  id: 2
+  titolo: MyString
+  data_lavori: 2012-10-19
+  localita: MyString
+  descrizione: MyString
+  copertina: copertina_2
+  folder: old_string
